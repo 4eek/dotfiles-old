@@ -46,6 +46,7 @@ alias g='git status'
 alias gcm='git commit -m'
 alias gdc='git diff --cached | gitx'
 alias gg='git lg'
+alias gm='git merge'
 alias gx='gitx --all'
 alias ungit="find . -name '.git' -exec rm -rf {} \;"
 # Git clone from GitHub
