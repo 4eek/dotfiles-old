@@ -1,0 +1,37 @@
+[user]
+	email = kevin@4e.co.za
+	name = Kevin G Fourie
+[color]
+  ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+[color "diff"]
+  meta = yellow 
+[apply]
+	whitespace = nowarn
+[core]
+	editor = vim
+[alias]
+  co = checkout
+  st = status
+  lol = log --pretty=oneline --abbrev-commit --graph --decorate
+	datetag = !git tag `date \"+%Y%m%d%H%M\"`
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+[git-tmbundle]
+	gitx-path = /usr/local/bin/gitx
+	gitnub-path = /usr/bin/nub
+[diff]
+	tool = kdiff3
+[merge]
+	tool = kdiff3
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+[help]
+	autocorrect = 1
+[branch]
+	autosetupmerge = true
+[push]
+	default = tracking
