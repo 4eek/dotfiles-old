@@ -1,3 +1,5 @@
+set nocompatible
+silent! call pathogen#runtime_append_all_bundles()
 " ================
 " Ruby stuff
 " ================
@@ -59,11 +61,10 @@ map <C-n> :cn<CR>
 map <C-p> :cp<CR>
 
 
-set nocompatible
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
-set history=500		" keep 500 lines of command line history
-set ruler		" show the cursor position all the time
-set showcmd		" display incomplete commands
+set history=500         " keep 500 lines of command line history
+set ruler               " show the cursor position all the time
+set showcmd             " display incomplete commands
 set autoindent
 set showmatch
 set nowrap
@@ -74,10 +75,12 @@ set wmh=0
 set viminfo+=!
 set guioptions-=T
 set guifont=Triskweline_10:h10
-set et
-set sw=2
 set smarttab
-set noincsearch
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+set incsearch
+"set noincsearch
 "set ignorecase smartcase
 set laststatus=2  " Always show status line.
 set number 

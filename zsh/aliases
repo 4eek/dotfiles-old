@@ -36,6 +36,7 @@ alias gp='git push'
 alias gnp="git-notpushed"
 alias gd='git diff | gitx'
 alias gdm='git diff master | gitx'
+alias gcx='gitx -c'
 alias gc='git commit -v'
 alias gca='git commit -v -a'
 alias gco='git checkout'
@@ -49,6 +50,8 @@ alias gg='git lg'
 alias gm='git merge'
 alias gx='gitx --all'
 alias ungit="find . -name '.git' -exec rm -rf {} \;"
+alias gmrc="gitx --left-right origin/master...HEAD"
+alias gerc="gitx --left-right origin/edge...HEAD"
 # Git clone from GitHub
 function gch() {
   git clone git://github.com/$USER/$1.git
@@ -85,6 +88,9 @@ alias rc='rails console'
 alias rs='rails server -p 3000'
 alias s='screen -dr rails'
 alias so='source ~/.dotfiles/zsh/aliases'
+alias aa='autotest'
+alias aaf='autotest -f' # Don't run all at start
+alias aas="./script/autospec"
 
 # EC2
 alias env-kevin='source ~/.ec2/env-kevin'
@@ -92,4 +98,17 @@ alias env-ops='source ~/.ec2/env-ops'
 alias env-yoyozi='source ~/.ec2/env-yoyozi'
 
 # Projects
-alias cdp='cd ~/code/Yoyozi/textoall'
+alias cdp='cd ~/development/Yoyozi/textoall'
+
+# SSH
+alias ssh-textoall.net="ssh -i ~/.ec2/ec2-keypair ubuntu@textoall.net -t byobu -dRR"
+alias ssh-textoall.com="ssh -i ~/.ec2/ec2-keypair ubuntu@textoall.com -t byobu -dRR"
+alias khf="vi ~/.ssh/known_hosts"
+
+# Screens
+alias screen-dev="screen -dRR dev"
+alias screen-irc="screen -dRR irc"
+alias screen-ec2="screen -dRR ec2"
+
+# nginx
+alias nr='sudo kill -HUP `cat /var/run/nginx.pid`'
