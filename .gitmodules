@@ -85,3 +85,6 @@
 [submodule "vim/bundle/vim-rdoc"]
 	path = vim/bundle/vim-rdoc
 	url = http://github.com/hallison/vim-rdoc.git
+[submodule "vim/bundle/vim-supertab"]
+	path = vim/bundle/vim-supertab
+	url = http://github.com/tsaleh/vim-supertab.git
