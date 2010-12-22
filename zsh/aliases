@@ -88,17 +88,17 @@ alias rc='rails console'
 alias rs='rails server -p 3000'
 alias s='screen -dr rails'
 alias so='source ~/.dotfiles/zsh/aliases'
-alias aa='autotest'
-alias aaf='autotest -f' # Don't run all at start
+alias aa='bundle exec autotest'
+alias aaf='bundle exec autotest -f' # Don't run all at start
 alias aas="./script/autospec"
 
 # EC2
 alias env-kevin='source ~/.ec2/env-kevin'
 alias env-ops='source ~/.ec2/env-ops'
-alias env-yoyozi='source ~/.ec2/env-yoyozi'
+alias env-siteup='source ~/.ec2/env-siteup'
 
 # Projects
-alias cdp='cd ~/development/Yoyozi/textoall'
+alias cdp='cd ~/development/4e/siteup'
 
 # SSH
 alias ssh-textoall.net="ssh -i ~/.ec2/ec2-keypair ubuntu@textoall.net -t byobu -dRR"
