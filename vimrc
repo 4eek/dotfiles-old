@@ -129,6 +129,8 @@ let Grep_Default_Filelist = '**/*.rb **/*.erb **/*.haml **/*.sass **/*.scss'
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set list
 
+colorscheme vividchalk
+
 " ========================================================================
 " End of things set by me.
 " ========================================================================

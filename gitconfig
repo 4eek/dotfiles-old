@@ -12,6 +12,7 @@
 	whitespace = nowarn
 [core]
 	editor = vim
+	quotepath = false
 [alias]
   co = checkout
   st = status
@@ -22,9 +23,9 @@
 	gitx-path = /usr/local/bin/gitx
 	gitnub-path = /usr/bin/nub
 [diff]
-	tool = kdiff3
+	tool = araxis
 [merge]
-	tool = kdiff3
+	tool = araxis
 [difftool]
 	prompt = false
 [mergetool]

@@ -1,6 +1,5 @@
 #!/usr/bin/ruby
 require 'rubygems'
-require 'looksee/shortcuts'
 require 'wirble'
 require 'pp'
 require 'irb/completion'
@@ -22,7 +21,7 @@ class Object
   def local_methods(obj = self)
     (obj.methods - obj.class.superclass.instance_methods).sort
   end
-  
+
   # print documentation
   #
   #   ri 'Array#pop'
