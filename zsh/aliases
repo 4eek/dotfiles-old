@@ -33,8 +33,6 @@ alias md='mkdir -p'
 # git
 alias gl='git pull'
 alias gp='git push'
-alias gph='git push heroku master'
-alias gphd='git push heroku-demo demo:master'
 alias gnp="git-notpushed"
 alias gd='git diff | gitx'
 alias gdm='git diff master | gitx'
@@ -120,3 +118,7 @@ alias nr='sudo kill -HUP `cat /var/run/nginx.pid`'
 
 # No autocorrect for these please
 alias knife="nocorrect knife"
+
+# Growl notifications
+growl() { print -n '\e]9;'${@}'\007' }
+

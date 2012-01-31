@@ -129,7 +129,10 @@ let Grep_Default_Filelist = '**/*.rb **/*.erb **/*.haml **/*.sass **/*.scss'
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set list
 
-colorscheme vividchalk
+" colorscheme vividchalk
+set background=dark
+colorscheme solarized
+" colorscheme railscasts
 
 " ========================================================================
 " End of things set by me.

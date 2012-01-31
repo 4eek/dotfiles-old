@@ -115,7 +115,7 @@ export ZLS_COLORS=$LS_COLORS
 export LANG="en_GB.UTF-8"
 
 export EC2_HOME=~/Library/ec2-api-tools
-export PATH=~/bin:/usr/local/bin:/usr/local/sbin:/usr/local/mysql/bin:$EC2_HOME/bin:/opt/local/bin:/opt/local/sbin:/opt/git/bin:$PATH
+export PATH=/usr/local/bin:~/bin:/usr/local/sbin:/usr/local/mysql/bin:$EC2_HOME/bin:/opt/local/bin:/opt/local/sbin:/opt/git/bin:$PATH
 export JAVA_HOME=/Library/Java/Home
 export AUTOFEATURE=true
 export RSPEC=true
@@ -126,7 +126,7 @@ export LINES=40
 # For git completion
 export PATH=$PATH:/usr/local/libexec/git-core
 
-export CURPROJ=/Yoyozi/textoall
+export CURPROJ=
 
 # RVM
 if [[ -s /Users/4eek/.rvm/scripts/rvm ]] ; then source /Users/4eek/.rvm/scripts/rvm ; fi
@@ -136,8 +136,8 @@ fpath=(~/.zsh/functions $fpath)
 autoload -U ~/.zsh/functions/*(:t)
 
 HISTFILE=~/.zsh_history
-HISTSIZE=1000
-SAVEHIST=1000
+HISTSIZE=10000
+SAVEHIST=10000
 
 setopt NO_BG_NICE # don't nice background tasks
 setopt NO_HUP
